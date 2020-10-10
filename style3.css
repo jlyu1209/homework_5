@@ -1,0 +1,309 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 24px;
+
+}
+
+.logo{
+    color: #EE6E11;
+    font-family: sans-serif;
+    float: right;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.navtools {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-family: "Mulish";
+    list-style: none;
+}
+
+.orderbutton {
+    background-color: #EE6E11;
+    color: white;
+    padding: 6px 12px; 
+
+}
+
+.descrip {
+    text-align: center;
+    font-family: "Mulish";
+    font-size: 14px;
+    margin: 36px 200px;
+}
+
+
+.homeimg {
+    width: 100%;
+    height: 90%;
+}
+
+
+.smalltext {
+    font-size: 30px;
+}
+
+.insideimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-family: "Mulish";
+    font-size: 40px;
+    width: 90%;
+}
+
+.imgtext {
+    line-height: 95%;
+
+}
+
+.fa-arrow-alt-circle-right{
+    margin-top: 70px;
+    font-size: 70px;
+}
+
+.fa-arrow-alt-circle-left{
+    margin-top: 70px;
+    font-size: 70px;
+}
+
+/*.................... MENU PRODUCT PAGE ......................*/
+
+.container {
+    font-family: "Mulish";
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    margin: auto;
+}
+
+.productcard {
+    /* border: 1px solid red; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+
+.productpic {
+    /* width: 25%;
+    height: auto;
+
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 160px; /* Set a small width */
+    height: 120px;
+    clip: rect(0px,60px,200px,0px);
+    margin: 0 auto;
+}
+
+.productpic-temp {
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 140px; /* Set a small width */
+    height: 140px;
+    clip: rect(0px,60px,200px,0px);
+    margin: 0 auto;
+}
+
+#blueberry-pic {
+    background-image: url("Blueberry.jpg");
+    background-size: cover; 
+}
+
+#original-pic{
+    background-image: url("Original.jpg");
+    background-size: cover;
+    background-position: right;
+ 
+}
+
+#pumpkin-pic{
+    background-image: url("Pumpkin.jpg");
+    background-size: cover;
+    background-position: center;
+  
+}
+
+#gluten-pic{
+    background-image: url("Original.jpg");
+    background-size: cover;
+    background-position: right;
+ 
+}
+
+#walnut-pic{
+    background-image: url("Walnut.jpg");
+    background-size: cover;
+    background-position: bottom;
+ 
+}
+
+#caramel-pic{
+    background-image: url("Caramel.jpg");
+    background-size: cover;
+    background-position: right; 
+}
+
+.flavor-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    margin: 0 40px;
+}
+
+.calories {
+    font-size: 85%;
+    font-family: sans-serif;
+}
+
+.ingredients {
+    font-size: 85%;
+    font-family: sans-serif;
+
+}
+
+.flavor-price-calories {
+    line-height: 50%;
+}
+
+.ingredients-plus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-color {
+    color: #EE6E11;
+}
+
+
+
+
+/*...................... ADD ON PAGE ......................*/
+
+.productaddon {
+    padding: 70px 30px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #E5E5E5;
+  }
+
+.addon-pic-flavor-price {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 60%;
+
+   
+
+}
+
+.addon-pic{
+border-radius: 4px;  /* Rounded border */
+padding: 5px; /* Some padding */
+width: 200px; /* Set a small width */
+height: 200px;
+clip: rect(0px,60px,200px,0px);
+}
+
+#blueberry-addon {
+    background-image: url("Blueberry.jpg");
+    background-size: cover;
+}
+
+.productaddon{
+    font-family: "Mulish";
+}
+
+.addonlabel {
+    color: #EE6E11
+    
+}
+
+.glazetype {
+    border: 1px solid black;
+    padding: 3px 10px;
+    font-size: 75%;
+    align-items: center;
+    background: white;
+}
+
+
+.allglaze {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 60px;
+}
+
+.addtobag {
+    background-color: #EE6E11;
+    color: white;
+    padding: 3px 12px; 
+    float: right;
+    margin-left :24px;
+    margin-top: 24px;
+}
+
+.back {
+    background-color: white;
+    color:#EE6E11;
+    padding: 3px 12px; 
+    float: right;
+    margin-top: 24px;
+}
+
+.add-back {
+    margin: 0 12px;
+}
+
+.quantities {
+    background-color: white;
+    padding: 3px 36px; 
+    margin-left :150px;
+    font-size: 75%;
+}
+
+
+
+
+/* ...............FOOTER.............. */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Mulish";
+    font-size: small;
+    margin: 24px;
+}
+
+.footnav {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    list-style: none;
+}
+
+
