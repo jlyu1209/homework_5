@@ -89,11 +89,11 @@ class Rolls {
 function addToBag() {
    
     var flavors = document.querySelector('#p-modal-flavor').innerText;
-    console.log (flavors);
+    //console.log (flavors);
     
     //var glaze = document.getElementsByClassName ("glazeType").value
     var glaze = document.querySelector("button.glazeType.active-glaze").value;
-    console.log (glaze);
+    //console.log (glaze);
     
     var quant = document.querySelector("#selectedQuant").value;
 
@@ -108,7 +108,7 @@ function addToBag() {
     //var roll = new Rolls (flavors, glaze, quant);
 
     //productArray.push(roll);
-    //console.log (productArray);
+    console.log (productArray);
 
 	
     updateBagNumber(productArray.length);
@@ -123,6 +123,10 @@ function updateBagNumber (num) {
     bagCount.innerHTML = num; 
 };
 
+
+function backToOrder (){
+    document.querySelector ('.addonmodal').style.display = "none";
+};
 
 
 
