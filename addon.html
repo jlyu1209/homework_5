@@ -20,24 +20,30 @@
             <div class = "glaze">
                 <p class= "addonlabel">GLAZE?</p>
                 <div class = allglaze>
-                <buttons class = "glazetype"> NONE</buttons>
-                <buttons class = "glazetype"> CHCOLATE</buttons>
-                <buttons class = "glazetype"> VANILLA</buttons>
-                <buttons class = "glazetype"> SUGAR MILK</buttons>
+                <button class = "glazetype"> NONE</button>
+                <button class = "glazetype"> CHCOLATE</button>
+                <button class = "glazetype"> VANILLA</button>
+                <button class = "glazetype"> SUGAR MILK</button>
                 </div>
             </div>
 
-            <div class = "quantities-drop">
-                <p class=addonlabel> QUANTITIES</p>
-                <div class = "quant-arrow">
-                    <buttons class = "quantities">1</buttons>
-                    <div class = "arrow"></div>
-                </div>
-            </div>    
+            <div class = quant>
+                <label for="quant-select">QUANTITIES</label>
+                <select name="quant" id="quant-select">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+    
+
             <div class = "add-back">
-                <buttons class = "addtobag">ADD TO BAG</buttons>
-                <a href="menuproduct3.html">
-                    <buttons class = "back">BACK TO ORDER</buttons>
+                <a href = "shoppingcart2.html">
+                    <button class = "addtobag">ADD TO BAG</button>
+                </a>
+                <a href="selection.html">
+                    <button class = "back">BACK TO ORDER</button>
                 </a>
             </div>
 

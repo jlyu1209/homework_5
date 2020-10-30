@@ -31,7 +31,7 @@ nav {
 .orderbutton {
     background-color: #EE6E11;
     color: white;
-    padding: 6px 12px; 
+    padding: 6px 12px;
 
 }
 
@@ -60,7 +60,7 @@ nav {
     position: absolute;
     top: 75%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     color: white;
     font-family: "Mulish";
     font-size: 40px;
@@ -81,6 +81,9 @@ nav {
     margin-top: 70px;
     font-size: 70px;
 }
+
+
+
 
 /*.................... MENU PRODUCT PAGE ......................*/
 
@@ -128,41 +131,41 @@ nav {
 
 #blueberry-pic {
     background-image: url("Blueberry.jpg");
-    background-size: cover; 
+    background-size: cover;
 }
 
 #original-pic{
     background-image: url("Original.jpg");
     background-size: cover;
     background-position: right;
- 
+
 }
 
 #pumpkin-pic{
     background-image: url("Pumpkin.jpg");
     background-size: cover;
     background-position: center;
-  
+
 }
 
 #gluten-pic{
     background-image: url("Original.jpg");
     background-size: cover;
     background-position: right;
- 
+
 }
 
 #walnut-pic{
     background-image: url("Walnut.jpg");
     background-size: cover;
     background-position: bottom;
- 
+
 }
 
 #caramel-pic{
     background-image: url("Caramel.jpg");
     background-size: cover;
-    background-position: right; 
+    background-position: right;
 }
 
 .flavor-price {
@@ -203,8 +206,20 @@ nav {
 
 /*...................... ADD ON PAGE ......................*/
 
+.addonmodal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+    }
+
+
 .productaddon {
-    padding: 70px 30px;
+    padding: 70px 50px;
     max-width: 600px;
     margin: auto;
     background-color: #E5E5E5;
@@ -215,7 +230,7 @@ nav {
     justify-content: space-evenly;
     line-height: 60%;
 
-   
+
 
 }
 
@@ -238,10 +253,10 @@ clip: rect(0px,60px,200px,0px);
 
 .addonlabel {
     color: #EE6E11
-    
+
 }
 
-.glazetype {
+.glazeType {
     border: 1px solid black;
     padding: 3px 10px;
     font-size: 75%;
@@ -251,7 +266,7 @@ clip: rect(0px,60px,200px,0px);
 
 
 .allglaze {
-    display: flex;
+    /*display: flex;*/
     justify-content: space-around;
     margin: 0 60px;
 }
@@ -259,7 +274,7 @@ clip: rect(0px,60px,200px,0px);
 .addtobag {
     background-color: #EE6E11;
     color: white;
-    padding: 3px 12px; 
+    padding: 3px 12px;
     float: right;
     margin-left :24px;
     margin-top: 24px;
@@ -268,7 +283,7 @@ clip: rect(0px,60px,200px,0px);
 .back {
     background-color: white;
     color:#EE6E11;
-    padding: 3px 12px; 
+    padding: 3px 12px;
     float: right;
     margin-top: 24px;
 }
@@ -277,15 +292,236 @@ clip: rect(0px,60px,200px,0px);
     margin: 0 12px;
 }
 
-.quantities {
+.selectedQuant {
     background-color: white;
-    padding: 3px 36px; 
+    padding: 3px 36px;
     margin-left :150px;
     font-size: 75%;
 }
 
+.quant {
+    margin-top: 50px;
+    color: #EE6E11;
+}
+
+select {
+    margin-left: 50px;
+    padding: 0px 10px 0px 20px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+}
 
 
+.active-glaze {
+    background-color: #EE6E11;
+}
+
+.blueberry-pic {
+    background-image: url("Blueberry.jpg");
+    background-size: cover;
+}
+
+.original-pic{
+    background-image: url("Original.jpg");
+    background-size: cover;
+    background-position: right;
+
+}
+
+.pumpkin-pic{
+    background-image: url("Pumpkin.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.gluten-pic{
+    background-image: url("Original.jpg");
+    background-size: cover;
+    background-position: right;
+
+}
+
+.walnut-pic{
+    background-image: url("Walnut.jpg");
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.caramel-pic{
+    background-image: url("Caramel.jpg");
+    background-size: cover;
+    background-position: right;
+}
+
+
+
+/*...................... SELECTION ......................*/
+
+.sel-flavor-price {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 90px 0px 90px;
+
+}
+
+.deliveryadd {
+    font-family: Mulish;
+    font-size: small;
+
+}
+
+.ordeprompt {
+    font-family: Mulish;
+    margin-left: 100px;
+    font-size: small;
+}
+
+
+.shoppingBag {
+    position: relative;
+    text-align: center;
+    color: #EE6E11;
+    z-index: 1;
+}
+
+#bagCount {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: white;
+    font-size: small;
+
+}
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+
+
+/* ...............SHOPPING CART 2.............. */
+
+.section {
+    border: 2px solid #EE6E11;
+    padding: 20px;
+}
+
+.shoppingcart {
+    margin: 0px 80px 0px 80px;
+    font-family: Mulish;
+}
+
+.more {
+    background-color: #EE6E11;
+    color: white;
+    padding: 3px 12px;
+    /*float: right;
+    margin-left :24px;
+    margin-top: 24px;*/
+}
+
+.checkout  {
+    background-color:#EE6E11;
+    color: white;
+    padding: 3px 12px;
+    /*float: right;
+    margin-left: 24px;
+    margin-top: 24px;*/
+}
+
+.more-checkout {
+    margin-top: 24px;
+    font-family: Mulish;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.deliverylocation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartitem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: medium;
+}
+
+
+.sub-price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-size: small;
+
+}
+
+.total-more-checkout {
+    margin-left: 50%;
+}
+
+.changequant {
+    display: flex;
+    flex-direction: column;
+}
+
+#total-price {
+    padding-top: 5px;
+    border-top: 2px solid #EE6E11;
+    font-weight: 900;
+}
+
+
+#section1 {
+    color: white;
+    background-color: #EE6E11;
+}
+
+#section3 {
+    color: white;
+    background-color: #EE6E11;
+}
+
+.yourorder{
+    font-size: small;
+}
+
+.cartpic {
+    border: 2px solid;
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 40px; /* Set a small width */
+    height: 40px;
+    clip: rect(0px,60px,200px,0px);
+}
+
+
+.change {
+    font-size: small;
+    color: #EE6E11;
+
+}
+
+#flavor-pic {
+    background-image: url("Blueberry.jpg");
+    background-size: cover;
+}
 
 /* ...............FOOTER.............. */
 
@@ -305,5 +541,3 @@ clip: rect(0px,60px,200px,0px);
     width: 20%;
     list-style: none;
 }
-
-
