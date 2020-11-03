@@ -54,21 +54,21 @@ function addClickHandlersForProductCards() {
             // change the image of the modal div
             let imgDiv = document.querySelector("#div-img-modal");
             let targetId = e.target.id;
-            console.log (imgDiv);
-            console.log (targetId);
+            //console.log (imgDiv);
+            //console.log (targetId);
             imgDiv.classList.add(targetId);
 
             // change the text of the modal paragraphs
             let pFlavor = document.querySelector("#p-modal-flavor")
             let flavorStr = chooseFlavor(targetId)
+            console.log (flavorStr);
             pFlavor.innerText = flavorStr
 
             // change the price of modal  
-            //let pPrice = document.querySelector ("#p-modal-price")
+            let pPrice = document.querySelector ("#p-modal-price")
             let parentElem = e.target.parentElement;
-            console.log (parentElem);
-            //let priceStr = choosePrice (p.price)
-            //pPrice.innerText = priceStr
+            let priceStr = (parentElem.querySelector ('.price')).innerHTML;
+            pPrice.innerText = priceStr
 
         }
     }
@@ -100,7 +100,7 @@ function addToBag() {
 
     var quantCount = parseInt(quant)
 	for(var i = 0; i < quantCount; i++) {
-		var roll = new Rolls (flavors, glaze, quant)
+		var roll = new Rolls (flavors, glaze, 1)
 		productArray.push(roll)	
     };
     
