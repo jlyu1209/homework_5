@@ -61,7 +61,7 @@ function addClickHandlersForProductCards() {
             // change the text of the modal paragraphs
             let pFlavor = document.querySelector("#p-modal-flavor")
             let flavorStr = chooseFlavor(targetId)
-            console.log (flavorStr);
+            //console.log (flavorStr);
             pFlavor.innerText = flavorStr
 
             // change the price of modal  
@@ -75,58 +75,63 @@ function addClickHandlersForProductCards() {
 }
 
 var productArray = []
+//var cartProducts = []
 
 
 class Rolls {
-    constructor (flavors, glaze, quant){
-        this.flavors = flavors
-        this.glaze = glaze
-        this.quant = quant
+    constructor (flavors, glaze, quant, price){
+        //this.productPic = productPic;
+        this.flavors = flavors;
+        this.glaze = glaze;
+        this.quant = quant;
+        this.price = price;
     }
 };
 
 
 function addToBag() {
+
+    //var productPic = document.querySelector()
    
     var flavors = document.querySelector('#p-modal-flavor').innerText;
-    //console.log (flavors);
-    
-    //var glaze = document.getElementsByClassName ("glazeType").value
     var glaze = document.querySelector("button.glazeType.active-glaze").value;
-    //console.log (glaze);
-    
+    var price = document.querySelector("#p-modal-price").innerText;
     var quant = document.querySelector("#selectedQuant").value;
 
-
-    var quantCount = parseInt(quant)
-	for(var i = 0; i < quantCount; i++) {
-		var roll = new Rolls (flavors, glaze, 1)
-		productArray.push(roll)	
-    };
+    var quantCount = parseInt(quant);
     
+    var roll = new Rolls (flavors, glaze, quantCount, price);
+    
+	productArray.push(roll);
+    //console.log (productArray);
 
-    //var roll = new Rolls (flavors, glaze, quant);
+    updateBagNumber(productArray);
 
-    //productArray.push(roll);
-    console.log (productArray);
+    document.querySelector('.addonmodal').style.display = "none";
 
-	
-    updateBagNumber(productArray.length);
-
-    document.querySelector ('.addonmodal').style.display = "none";
    
+    window.localStorage.setItem ('selectedProducts', JSON.stringify (productArray));
+
+
 };
 
 
-function updateBagNumber (num) {
+function updateBagNumber (productArray) {
+    let count = 0;
+    for (let i = 0; i < productArray.length; i++) {
+        count = count + productArray[i].quant
+    }
     var bagCount = document.querySelector('#bagCount');
-    bagCount.innerHTML = num; 
+    bagCount.innerHTML = count; 
 };
 
 
 function backToOrder (){
     document.querySelector ('.addonmodal').style.display = "none";
 };
+
+
+
 
 
 
